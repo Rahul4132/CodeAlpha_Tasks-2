@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Social Feed</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
+
+    <h2>LinkedIn Clone</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search users..."
+    >
+
+    <button id="searchButton">
+        Search
+    </button>
+
+</nav>
+    <div class="container">
+
+        <div class="left-panel">
+
+            <img id="profile-picture">
+
+            <h3>Rahul</h3>
+
+            <p>Full-Stack Developer</p>
+
+            <hr>
+
+            <p>Followers: 0</p>
+
+            <p>Following: 0</p>
+
+        </div>
+
+        <div class="middle-panel">
+
+    <div class="create-post">
+
+        <textarea
+            id="postContent"
+            placeholder="Start a post"
+        ></textarea>
+
+        <br>
+
+        <button id="createPostButton">
+            Post
+        </button>
+
+    </div>
+
+    <div id="posts"></div>
+
+</div>
+
+      <div class="right-panel">
+
+    <h3>People you may know</h3>
+
+    <div id="suggestions"></div>
+    <hr>
+
+    <h3>Notifications</h3>
+
+    <div id="notifications"></div>
+
+</div>
+
+    </div>
+
+    <script src="./js/feed.js"></script>
+    <script src="./js/suggestion.js"></script>
+    <script src="./js/createPost.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/notification.js"></script>
+</body>
+
+</html>
